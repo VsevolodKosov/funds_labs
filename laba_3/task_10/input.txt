@@ -1,0 +1,3 @@
+A (B (E (G, T, R (W, Z)), F (L, M)), C)
+D (H (P, Q, S (U, V)), I (J, K (L, M), N))
+X (Y (A, B (C, D), E), Z (F, G (H, I)))
