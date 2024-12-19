@@ -1,0 +1,29 @@
+ID: 1001;
+Surname: Ivanov;
+Name: Ivan;
+Group: A1;
+Marks: 4 5 3 4 5;
+
+ID: 1002;
+Surname: Petrov;
+Name: Petr;
+Group: B1;
+Marks: 5 5 4 4 5;
+
+ID: 1003;
+Surname: Sidorov;
+Name: Alex;
+Group: A1;
+Marks: 3 4 5 5 4;
+
+ID: 1004;
+Surname: Smirnova;
+Name: Anna;
+Group: B2;
+Marks: 4 4 4 5 3;
+
+ID: 1005;
+Surname: Kuznetsova;
+Name: Olga;
+Group: C1;
+Marks: 5 5 5 5 5;

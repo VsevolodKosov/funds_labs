@@ -9,9 +9,9 @@ typedef enum{
     OverFlowError,
     OpenFileError,
     DivisionByZero,
-    ItemExist,
-    ItemDoesNotExist,
-    PointerToNullError
+    PointerToNullError,
+    DoesntExist,
+    Missing
 }status_code;
 
 #endif

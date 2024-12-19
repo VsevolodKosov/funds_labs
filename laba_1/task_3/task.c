@@ -7,7 +7,7 @@ int main(int argc, char *argv[]) {
         return InputError;
     }
 
-    // Проверка флага на корректность
+    
     if (!(argv[1][0] == '-' || argv[1][0] == '/')) {
         printf("InputError: Flag must start with '-' or '/'\n");
         return FlagError;
@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
                 return InputError;
             }
 
-            // Проверка коэффициентов
+    
             double coeff_1, coeff_2, coeff_3;
             status = string_to_double(argv[3], &coeff_1);
             if (status != OK) {
@@ -105,7 +105,6 @@ int main(int argc, char *argv[]) {
                 return InputError;
             }
 
-            // Проверка эпсилона
             double epsilon;
             status_code status = string_to_double(argv[2], &epsilon);
             if (status == PointerToNullError) {
@@ -117,13 +116,11 @@ int main(int argc, char *argv[]) {
                 return InputError;
             }
 
-            // Проверка на отрицательный или нулевой эпсилон
             if (epsilon <= 0) {
                 printf("InputError: Epsilon must be positive\n");
                 return InputError;
             }
 
-            // Проверка коэффициентов (сторон треугольника)
             double side1, side2, side3;
             status = string_to_double(argv[3], &side1);
             if (status == PointerToNullError) {
@@ -154,9 +151,7 @@ int main(int argc, char *argv[]) {
                 printf("InputError: Incorrect side 3\n");
                 return InputError;
             }
-            printf("%d\n", status);
 
-            // Проверка, могут ли быть длинами сторон прямоугольного треугольника
             int res = check_right_triangle(side1, side2, side3, epsilon);
             if (res == 1) {
                 printf("The numbers can form a right triangle\n");
